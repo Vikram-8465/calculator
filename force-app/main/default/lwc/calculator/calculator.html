@@ -1,0 +1,13 @@
+<template>
+    <div class="conainer slds-grid slds-wrap slds-grid_align-center slds-grid_vertical-align-center ">
+        <div class="header slds-grid slds-wrap slds-size_1-of-1 slds-var-p-horizontal_x-small">
+            <div class="previous-operand">{previousOperand}</div>
+            <div class="current-operand">{currentOperand}</div>
+        </div>
+        <div class=" body slds-grid slds-wrap">
+            <template for:each={buttons} for:item="button">
+                <button class={button.style} key={button.label} onclick={buttonsHandler}>{button.label}</button>
+            </template>
+        </div>
+    </div>
+</template>
