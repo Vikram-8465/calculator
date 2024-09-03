@@ -21,6 +21,7 @@ export default class Calculator extends LightningElement {
     constructor() {
         super();
         this.audio = new Audio(sound);
+        this.audio.volume = 0.1; // Reduce the volume to 10%
     }
 
     playSound() {
